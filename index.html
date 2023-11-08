@@ -48,6 +48,13 @@
     </nav>
     <!-- navbar -->
 
+
+    <button onClick="btn_toggle()" class="btn"  type="button">
+        <div class="line1">-</div>
+        <div class="line2">-</div>
+        <div class="line3">-</div>
+    </button>
+
     <!-- menu -->
     <div class="top-menubar">
         <ul>
@@ -137,6 +144,24 @@
             <img src="./image/shadow_girl.png" alt="">
         </div>
     </section>
+
+
+    <script>
+        console.log("hui")
+        function btn_toggle() {
+        let NavBar = document.querySelector(".top-menubar");
+        let line1 = document.querySelector(".line1");
+        let line2 = document.querySelector(".line2");
+        let line3 = document.querySelector(".line3");
+        console.log(line1, line2, line3);
+
+        // clicker is a function to show a menu option
+        line1.classList.toggle("change1");
+        line2.classList.toggle("change2");
+        line3.classList.toggle("change3");
+        NavBar.classList.toggle("active");
+    }
+    </script>
 </body>
 
 </html>
