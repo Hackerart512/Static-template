@@ -11,7 +11,7 @@
     justify-content: space-between;
     font-size: 13px;
  
- 
+    width: 100%;
     padding: 11px 70px;
  
 
@@ -55,6 +55,7 @@
 /* menu bar css */
 .top-menubar{
     padding: 0px 40px;
+    width: 100%;
 }
 
 ul{
@@ -111,6 +112,7 @@ nav{
     align-content: center;
     flex-wrap: wrap;
     padding: 16px 64px;
+    width: 100%;
 }
 
 .orderNow{
@@ -226,4 +228,63 @@ span.badge{
     padding: 0px 5px;
     color: white;
     font-size: 12px;
+}
+
+
+@media only screen and (max-width:883px){
+    .header{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact-details{
+        margin: 23px;
+    }
+}
+
+@media only screen and (max-width: 834px) {
+    .home-section{
+        flex-direction: column;
+    }
+
+    .home-info{
+        width: 100%
+    }
+
+    .home-image{
+        width: 100%
+    }
+
+    .top-menubar{
+        /* display:none */
+        
+    }
+   .top-menubar >ul{
+        flex-direction:column;
+    }
+
+   .top-menubar > ul> li{
+        margin: 8px;
+    }
+
+    input.inp{
+        width: 100%;
+    }
+   
+}
+
+
+@media only screen and (max-width: 501px) {
+     .logo{
+        margin: auto;
+        
+     }
+
+     .nav-components{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 12px;
+     }
 }
