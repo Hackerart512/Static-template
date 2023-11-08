@@ -10,11 +10,8 @@
     display: flex;
     justify-content: space-between;
     font-size: 13px;
- 
-    width: 100%;
+    width: 89%;
     padding: 11px 70px;
- 
-
 }
 
 .contact-details{
@@ -55,19 +52,21 @@
 /* menu bar css */
 .top-menubar{
     padding: 0px 40px;
-    width: 100%;
+    width: 93%;
 }
 
 ul{
     display:flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 ul li{
     list-style-type: none;
     margin: 0px 30px;
     position: relative;
+   
 }
 /* menu bar css */
 
@@ -112,7 +111,7 @@ nav{
     align-content: center;
     flex-wrap: wrap;
     padding: 16px 64px;
-    width: 100%;
+    width:89%;
 }
 
 .orderNow{
@@ -230,15 +229,49 @@ span.badge{
     font-size: 12px;
 }
 
+@media only screen and (max-width:1119px){
+    .top-menubar >ul{
+        flex-direction:column;
+    }
+
+   .top-menubar > ul> li{
+        margin: 8px;
+        text-align: center;
+        position: initial;
+    }
+
+    ul > li >  ul{
+        position: initial;
+    }
+}
 
 @media only screen and (max-width:883px){
     .header{
         align-items: center;
         flex-direction: column;
+        width: 100%;
     }
 
     .contact-details{
         margin: 23px;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    .top-menubar >ul{
+        flex-direction:column;
+    }
+
+   .top-menubar > ul> li{
+        margin: 8px;
+        text-align: center;
+        position: initial;
+    }
+
+    ul > li >  ul{
+        position: initial;
     }
 }
 
@@ -252,24 +285,25 @@ span.badge{
     }
 
     .home-image{
-        width: 100%
+        width: 100%;
+        padding: 23px 74px;
     }
 
     .top-menubar{
         /* display:none */
+        width: 100%;
+        padding: 0px 71px;
         
     }
-   .top-menubar >ul{
-        flex-direction:column;
-    }
-
-   .top-menubar > ul> li{
-        margin: 8px;
-    }
+   
 
     input.inp{
         width: 100%;
     }
+
+    /* nav{
+        width:100%
+    } */
    
 }
 
@@ -286,5 +320,10 @@ span.badge{
         align-items: center;
         width: 100%;
         margin: 12px;
+        justify-content: space-between;
+     }
+
+     .search-bar{
+        width: auto;
      }
 }
